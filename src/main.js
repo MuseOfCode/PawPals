@@ -1,5 +1,6 @@
 import Phaser from "phaser";
 import GameScene from "./scenes/GameScene";
+import RoomScene from "./scenes/RoomScene";
 
 const config = {
   type: Phaser.AUTO,
@@ -7,7 +8,7 @@ const config = {
   height: 1024,
   backgroundColor: "#2d2d2d",
   parent: "game-container",
-  scene: [GameScene],
+  scene: [GameScene, RoomScene],
   dom: {
     createContainer: true,
   },
